@@ -91,8 +91,8 @@ def test_delete_message(client):
 def test_search(client):
     """Test the search functionality"""
     # Execute a search query
-    response = client.get('/search/', query_string={'query': 'test'})
-    
+    response = client.get("/search/", query_string={"query": "test"})
+
     # Simply check the status code to ensure the route works
     assert response.status_code == 200
 
